@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramEkle.ProgramEkle">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="484dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5102599" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41997263" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32968536" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23803009" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10533515" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/derseklearka" />
+
+    <EditText
+        android:id="@+id/dersSecEdit"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/bookmainicon"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Ders seç"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline16"
+        app:layout_constraintTop_toBottomOf="@id/guideline15"/>
+
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:gravity="center|left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline16"
+        app:layout_constraintBottom_toTopOf="@id/guideline17"></Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/calendarmainicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline16"
+        app:layout_constraintBottom_toTopOf="@id/guideline17"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/goBackToDays"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goBackToDays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline16"
+        app:srcCompat="@drawable/gobackk"
+        app:layout_constraintBottom_toTopOf="@id/guideline17"/>
+
+    <EditText
+        android:id="@+id/devamsızlıkSecEdit"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/countmain"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Devamsızlık hakkın"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline17"
+        app:layout_constraintBottom_toTopOf="@id/guideline18"/>
+
+    <EditText
+        android:id="@+id/saatSecEdit"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/clockmainicon"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Saat seç"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline18"
+        app:layout_constraintBottom_toTopOf="@id/guideline19"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/programEkleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="backToEklenenProgramlar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline18"
+        app:srcCompat="@drawable/eklebutton"
+        app:layout_constraintBottom_toTopOf="@id/guideline20"/>
+
+    <ImageView
+        android:id="@+id/goBack"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline15"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "622975590112",
+    "firebase_url": "https://absenttracker.firebaseio.com",
+    "project_id": "absenttracker",
+    "storage_bucket": "absenttracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622975590112:android:33b64b2e1b8999c7b9ba85",
+        "android_client_info": {
+          "package_name": "package.com.beratucgul.at2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622975590112-ec4g1v193eack0e3b3i706247ub9pglp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX9eYVPYXN3h7_SMrH1ZMANuPLWAT_Fmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622975590112-ec4g1v193eack0e3b3i706247ub9pglp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

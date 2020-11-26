@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramEkle.ProgramGuncelle">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9781022" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02676399" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66757864" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5157319" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4254446" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3351573" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23939809" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/derseklearka" />
+
+    <EditText
+        android:id="@+id/dersGuncelleEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="124dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/bookmainicon"
+        android:hint="  Ders seç"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="@id/guideline27"
+        app:layout_constraintStart_toStartOf="@id/guideline26"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline21"/>
+
+    <EditText
+        android:id="@+id/gunGuncelleEdit"
+        android:layout_width="329dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/calendarmainicon"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Gün Seç"
+        android:textColorHint="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline21" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/goBackUpdateToDays"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goBackToUpdateDays"
+        app:layout_constraintEnd_toStartOf="@id/guideline27"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@id/gunGuncelleEdit"
+        app:layout_constraintTop_toBottomOf="@+id/guideline21"
+        app:srcCompat="@drawable/gobackk"
+        app:layout_constraintBottom_toTopOf="@id/guideline22"/>
+
+
+    <EditText
+        android:id="@+id/devamsızlıkGuncelleEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/countmain"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Devamsızlık hakkın"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="@id/guideline27"
+        app:layout_constraintStart_toStartOf="@id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/guideline22"
+        app:layout_constraintBottom_toTopOf="@id/guideline23"/>
+
+    <EditText
+        android:id="@+id/saatGuncelleEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/clockmainicon"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="  Saat seç"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="@id/guideline27"
+        app:layout_constraintStart_toStartOf="@id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/guideline23"
+        app:layout_constraintBottom_toTopOf="@id/guideline24"/>
+
+
+
+    <ImageView
+        android:id="@+id/programGuncelleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="goBackToEklenenProgramlar"
+        app:layout_constraintEnd_toEndOf="@id/guideline27"
+        app:layout_constraintStart_toStartOf="@id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/guideline24"
+        app:srcCompat="@drawable/eklebutton"
+        app:layout_constraintBottom_toTopOf="@id/guideline25"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
